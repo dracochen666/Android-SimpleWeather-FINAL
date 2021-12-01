@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:layout_weight="6"
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1    ">
+        <TextView
+            android:id="@+id/tv_weather"
+            android:layout_weight="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="天气预报"
+            android:textSize="50dp"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_weight="1"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:src="@drawable/imagesearch" />
+    </LinearLayout>
+
+<!--    <GridLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:columnCount="1"-->
+<!--        android:orientation="vertical"-->
+<!--        android:rowCount="5"-->
+<!--        android:layout_weight="3">-->
+<!--        <TextView-->
+<!--            android:id="@+id/tv_timeDisplay"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:text="今天 星期三"-->
+<!--            android:textSize="40dp"-->
+<!--            android:textColor="@color/black"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/tv_locationDisplay"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:text="Beijing"-->
+<!--            android:textSize="45dp"-->
+<!--            android:textColor="@color/black"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/tv_temperatureDisplay"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:text="1 ～ 10 °C"-->
+<!--            android:textSize="40dp"-->
+<!--            android:textColor="@color/black"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/tv_weatherDisplay"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:text="多云"-->
+<!--            android:textSize="40dp"-->
+<!--            android:textColor="@color/black"/>-->
+<!--    </GridLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5">
+
+        <ImageView
+            android:id="@+id/iv_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/tv_degree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="°C"
+            android:textSize="72dp"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_weather"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="72dp" />
+    </RelativeLayout>
+</LinearLayout>
